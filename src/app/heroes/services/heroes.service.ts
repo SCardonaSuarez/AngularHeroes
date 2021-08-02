@@ -10,7 +10,7 @@ export class HeroesService {
 
   constructor(private http: HttpClient) { }
 
-  getHeroes(): Observable <Heroe[]>{  //182
+  getHeroes():Observable<Heroe[]>{  //182
     return this.http.get<Heroe[]>('http://localhost:3000/heroes')
   }
 
